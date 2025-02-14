@@ -1,0 +1,478 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Lobster&family=Ubuntu:wght@500&display=swap');
+
+* {
+    margin: 0px;
+
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+.logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 2.4rem;
+    padding-left: 1rem;
+
+}
+
+.navbar {
+    display: flex;
+    /* background-color: rgb(23 23 23); */
+    align-items: center;
+    justify-content: center;
+    padding: 13px, 14px;
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Bebas Neue', cursive;
+    /* font-family: 'Lobster', cursive; */
+    z-index: 1;
+    position: sticky;
+    top: 0px;
+    cursor: pointer;
+    letter-spacing: 2px;
+
+}
+
+.navlist {
+    width: 70%;
+    /* background-color: #1d1d1d; */
+    /* background-color: #fff; */
+    /* background-color: rgb(23 23 23); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightnav {
+    width: 30%;
+    text-align: right;
+    /* background-color: rgb(23 23 23); */
+    padding: 2px;
+    padding-right: 15px;
+    /* width: 70px; */
+    border-radius: 20px;
+}
+
+.navlist li {
+    list-style: none;
+    padding: 20px 35px;
+}
+
+.navlist li a {
+    text-decoration: none;
+    color: #e8772e;
+    font-size: 18px;
+}
+
+.navlist li a:hover {
+    color: #fd8f63d1;
+    /* text-shadow: #fd8f63d1 0 0 7px; */
+    filter: glow(color=#fd8f63d1, strength=1);
+    text-shadow: #d7a61c 0 0 9px, #8b4b25 0px 0px 3px;
+
+}
+
+#search {
+    padding: 0.1rem;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 2px solid #e8772e;
+    background: none;
+}
+
+.background {
+    background: rgba(0, 0, 0, 0.2)url("../img/bg2.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstsection {
+    height: 100vh;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    color: aliceblue;
+    max-width: 50%;
+    padding-top: 5rem;
+    margin: auto;
+    height: 60%;
+}
+
+/* .first-half {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+} */
+.text-bg {
+    font-size: 4.2rem;
+    color: wheat;
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Bebas Neue', cursive;
+    /* font-family: 'Lobster', cursive; */
+    letter-spacing: 7px;
+
+}
+
+.text-small {
+    font-size: 1.1rem;
+    color: #fd8f63d1;
+    padding-top: 25px;
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'Bebas Neue', cursive;
+    /* font-family: 'Lobster', cursive; */
+    letter-spacing: 2px;
+
+}
+
+.text-small:hover {
+    color: #fd8f63d1;
+    text-shadow: #d7a61c 0 0 9px, #8b4b25 0px 0px 3px;
+    /* text-shadow:  #fd8f63d1 0 0 10px, white 5px 5px 5px; */
+
+}
+
+.btn {
+    padding: 2px;
+    width: 70px;
+    background: none;
+    font-size: 16px;
+    color: #e8772e;
+}
+
+.btn:hover {
+    color: #fd8f63d1;
+    text-shadow: #d7a61c 0 0 9px, #ffaa78 0px 0px 5px;
+}
+
+.burger {
+    display: none;
+    right: 5%;
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+}
+
+.line {
+    width: 33px;
+    height: 4px;
+    margin: 3px 3px;
+    background-color: antiquewhite;
+}
+
+.footer {
+    background-color: #ffaa78;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.footer ul li a {
+    /* filter: invert(1); */
+    max-width: 20px;
+}
+
+.icon {
+    width: 55px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 500;
+    /* font-family: 'Abril Fatface', cursive; */
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Lobster', cursive; */
+}
+
+.about {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.contentbx {
+    padding: 100px;
+    background-color: #e8772ecc;
+    width: 50%;
+}
+
+.heading {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1rem;
+    margin-bottom: 10px;
+}
+
+.text-about {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+        /* font-family: 'Abril Fatface', cursive; */
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-family: 'Lobster', cursive; */
+
+}
+
+.imgbox-about {
+    background: url(https://source.unsplash.com/900x900/?restaurant,food,html);
+    width: 50%;
+    background-size: cover;
+    background-position: cover;
+}
+
+/* services */
+.services {
+    background-color: #ffaa78;
+    padding: 100px;
+    align-items: center;
+}
+
+.ser-heading {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1rem;
+    margin-bottom: 10px;
+    font-family: 'Abril Fatface', cursive;
+    /* font-family: 'Bebas Neue', cursive; */
+    /* font-family: 'Lobster', cursive; */
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.text-serv {
+    font-size: 20px;
+    /* font-family: 'Abril Fatface', cursive; */
+    /* font-family: 'Bebas Neue', cursive; */
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.cards {
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.contentbx-cards {
+    padding: 100px;
+    background-color: #e8772ecc;
+    width: 50%;
+}
+
+.heading-cards {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1rem;
+    margin-bottom: 10px;
+    font-family: 'Abril Fatface', cursive;
+    /* font-family: 'Bebas Neue', cursive; */
+    /* font-family: 'Lobster', cursive; */
+
+}
+
+.text-cards {
+    /* font-family: 'Abril Fatface', cursive; */
+    /* font-family: 'Bebas Neue', cursive; */
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.imgbox-cake {
+    background: url(https://source.unsplash.com/900x900/?cakes,choclatecakes);
+    width: 50%;
+    background-size: cover;
+    background-position: cover;
+
+}
+
+.imgbox-homemade {
+    background: url(https://source.unsplash.com/900x900/?homemadefood);
+    width: 50%;
+    background-size: cover;
+    background-position: cover;
+
+}
+
+.imgbox-chinese {
+    background: url(https://source.unsplash.com/900x900/?chinesefood,chinesecusines);
+    width: 50%;
+    background-size: cover;
+    background-position: cover;
+
+}
+
+.imgbox-desi {
+    background: url(https://source.unsplash.com/900x900/?desifoods,curry);
+    width: 50%;
+    background-size: cover;
+    background-position: cover;
+
+}
+
+.imgbox-dessert {
+    background: url(https://source.unsplash.com/900x900/?desserts,icecreams,homemadedeserts,wafles);
+    width: 50%;
+    background-size: cover;
+    background-position: cover;
+}
+
+.testimonials {
+    position: relative;
+    padding: 100px;
+    background-color: #e8772e;
+    text-align: center;
+}
+
+.container-test {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+    flex-direction: row;
+}
+
+.contentbox-test {
+    padding: 60px 50px;
+    width: 550px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.text-test {
+    font-style: italic;
+    /* font-family: 'Ubuntu', sans-serif; */
+    /* font-family: 'Abril Fatface', cursive; */
+    /* font-family: 'Bebas Neue', cursive; */
+    /* font-family: 'Lobster', cursive; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.h-test {
+    font-weight: 900;
+    width: 100%;
+    color: #e8772e;
+    text-align: end;
+}
+
+.contact {
+    padding: 100px;
+    background-color: #ffaa78;
+    text-align: center;
+}
+
+.imgbox-contact {
+    background: url(./img/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+.red {
+    width: 50%;
+
+}
+
+.inputbx {
+    margin-bottom: 40px;
+}
+
+.inputbx input {
+    font-family: 'Abril Fatface', cursive;
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    /* color: #fff; */
+    border-bottom: 3px solid #ffff;
+}
+
+.inputbx input::placeholder {
+    color: #fff;
+}
+
+.inputbx textarea {
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    /* font-family: 'Abril Fatface', cursive; */
+    /* font-family: 'Bebas Neue', cursive; */
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Ubuntu', sans-serif;
+
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    /* color: #fff; */
+    border-bottom: 3px solid #ffff;
+    min-height: 150px;
+}
+
+.inputbx textarea::placeholder {
+    color: #fff;
+}
+
+.form .inputbx input[type="submit"] {
+    background-color: #fff;
+    /* font-family: 'Abril Fatface', cursive; */
+    /* font-family: 'Bebas Neue', cursive; */
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+
+
+    width: 150px;
+    /* color: #1111; */
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 400;
+}
